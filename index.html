@@ -1,58 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trisha Rajesh | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Trisha Rajesh</h1>
-    <p>Computer Science & Psychology Graduate</p>
-    <a href="#projects">View Projects</a>
+  <nav>
+    <h2>TR</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="tag">Software Engineer • CS + Psychology</p>
+    <h1>Hi, I’m Trisha Rajesh 👋</h1>
+    <p class="hero-text">
+      I build thoughtful, user-centered software across full-stack, mobile,
+      systems programming, and AI.
+    </p>
+    <div class="buttons">
+      <a href="#projects">View Projects</a>
+      <a href="resume.pdf" target="_blank" class="secondary">Resume</a>
+    </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="reveal">
     <h2>About Me</h2>
     <p>
-      I am a recent graduate with a double major in Computer Science and Psychology.
-      I enjoy building thoughtful, user-focused technology and exploring the intersection
-      of software, AI, and human behavior.
+      I’m a recent graduate from the University of Wisconsin–Madison with dual
+      degrees in Computer Science and Psychology. I’m interested in software
+      engineering, systems programming, AI, and building technology that feels
+      intuitive and human-centered.
     </p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="reveal">
     <h2>Projects</h2>
 
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Personal website built with HTML, CSS, and JavaScript.</p>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>MiniSpark Framework</h3>
+        <p>Built a multithreaded Spark-inspired data processing framework in C with RDD transformations, thread pools, and parallel execution.</p>
+      </div>
 
-    <div class="card">
-      <h3>AI / CS Project</h3>
-      <p>Add one of your class, internship, or GitHub projects here.</p>
+      <div class="card">
+        <h3>Custom Memory Allocator</h3>
+        <p>Implemented a dynamic memory allocator in C with splitting, coalescing, and best-fit placement strategies.</p>
+      </div>
+
+      <div class="card">
+        <h3>Thread Scheduler</h3>
+        <p>Created a pthread-based scheduler to manage concurrent task execution and prioritization.</p>
+      </div>
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Designed and deployed a personal portfolio using HTML, CSS, JavaScript, and GitHub Pages.</p>
+      </div>
     </div>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="reveal">
     <h2>Experience</h2>
-    <p><strong>Veritide — Website Intern</strong></p>
-    <p>Worked on website design, content updates, and improving the company’s digital presence.</p>
+
+    <div class="card">
+      <h3>Full-Stack Developer Intern — Spotidol</h3>
+      <p>Built features for mobile and web applications using React Native, Angular, Node.js, MongoDB, and TensorFlow.</p>
+    </div>
+
+    <div class="card">
+      <h3>NLP Intern — Docuvision</h3>
+      <p>Supported NLP-based redaction systems by preparing, annotating, and validating documents containing PII.</p>
+    </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="reveal">
     <h2>Skills</h2>
-    <p>Java, Python, C, JavaScript, React, HTML, CSS, Git, MongoDB</p>
+    <p><strong>Languages:</strong> Java, C, C++, Python, JavaScript</p>
+    <p><strong>Tools:</strong> React Native, Angular, Node.js, MongoDB, TensorFlow, Git</p>
+    <p><strong>CS:</strong> Data Structures, Algorithms, Operating Systems, Memory Management, Multithreading</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="reveal">
     <h2>Contact</h2>
-    <p>Email: your-email@email.com</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
-    <p>GitHub: github.com/yourusername</p>
-    <a href="resume.pdf">Download Resume</a>
+    <p>Email: <a href="mailto:trisharajesh23@gmail.com">trisharajesh23@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank">github.com/YOUR-USERNAME</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/YOUR-LINK" target="_blank">linkedin.com/in/YOUR-LINK</a></p>
   </section>
 
+  <footer>
+    <p>© 2026 Trisha Rajesh</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
