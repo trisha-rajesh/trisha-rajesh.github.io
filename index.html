@@ -4,53 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trisha Rajesh | Portfolio</title>
+  <meta name="description" content="Portfolio of Trisha Rajesh, software engineer with a background in CS and Psychology." />
+  <meta name="theme-color" content="#7c3aed" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💜%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph / social previews (og:url and og:image are placeholders: confirm/replace) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Trisha Rajesh | Portfolio" />
+  <meta property="og:description" content="Software engineer with a background in CS and Psychology, building thoughtful, user-centered software." />
+  <meta property="og:url" content="https://trisha-rajesh.github.io/" />
+  <meta property="og:image" content="https://trisha-rajesh.github.io/images/profile.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Trisha Rajesh | Portfolio" />
+  <meta name="twitter:description" content="Software engineer with a background in CS and Psychology, building thoughtful, user-centered software." />
+  <meta name="twitter:image" content="https://trisha-rajesh.github.io/images/profile.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Decorative floating blobs -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
   <nav>
-    <h2>TR</h2>
-    <div>
+    <a href="#top" class="logo">TR</a>
+    <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-      <button id="themeToggle">🌙</button>
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="hero-content">
 
-        <div class="hero-text-container">
+      <div class="hero-text-container">
+        <p class="tag">Software Engineer • CS + Psychology</p>
 
-            <p class="tag">Software Engineer • CS + Psychology</p>
+        <h1>Hi, I'm <span class="gradient-text">Trisha Rajesh</span></h1>
 
-            <h1>Hi, I'm Trisha Rajesh 👋</h1>
+        <p class="typed-line">I enjoy building <span id="typed" class="gradient-text"></span><span class="cursor">|</span></p>
 
-            <p class="hero-text">
-                I'm a recent UW–Madison graduate who enjoys building thoughtful,
-                user-centered software across full-stack, mobile, systems, and AI.
-            </p>
+        <p class="hero-text">
+          I'm a recent UW–Madison graduate who enjoys building thoughtful,
+          user-centered software across full-stack, mobile, systems, and AI.
+        </p>
 
-            <div class="buttons">
-                <a href="#projects">View Projects</a>
-                <a href="TrishaRajesh_Resume_v1.docx.pdf" target="_blank">Resume</a>
-            </div>
-
+        <div class="buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="TrishaRajesh_Resume_v1.docx.pdf" target="_blank" class="btn secondary">Resume</a>
         </div>
+      </div>
 
-        <div class="hero-image">
-            <img src="images/profile.png"
-                 alt="Trisha Rajesh"
-                 class="profile-picture">
+      <div class="hero-image">
+        <div class="photo-ring">
+          <img src="images/profile.png" alt="Trisha Rajesh" class="profile-picture" />
         </div>
+      </div>
 
     </div>
   </header>
 
   <section id="about" class="reveal">
-    <h2>About Me</h2>
+    <h2 class="section-title">About Me</h2>
 
     <p>
       I graduated from the University of Wisconsin–Madison with dual degrees in
@@ -64,13 +92,56 @@
       I’ve worked with Java, C, C++, Python, JavaScript, React Native, Angular,
       Node.js, MongoDB, TensorFlow, and Git.
     </p>
+
+    <!-- PLACEHOLDER: add a few fun facts / interests -->
+    <div class="fun-facts">
+      <span class="chip">🎨 Interest placeholder</span>
+      <span class="chip">📚 Interest placeholder</span>
+      <span class="chip">🎶 Interest placeholder</span>
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <div class="chips">
+        <span class="chip">Java</span><span class="chip">C</span><span class="chip">C++</span>
+        <span class="chip">Python</span><span class="chip">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Frameworks &amp; Tools</h3>
+      <div class="chips">
+        <span class="chip">React Native</span><span class="chip">Angular</span><span class="chip">Node.js</span>
+        <span class="chip">MongoDB</span><span class="chip">TensorFlow</span><span class="chip">Git</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Areas</h3>
+      <div class="chips">
+        <span class="chip">Full-Stack</span><span class="chip">Mobile</span><span class="chip">Systems</span>
+        <span class="chip">NLP</span><span class="chip">Human-Centered Design</span>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="reveal">
-    <h2>Featured Projects</h2>
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="c">C</button>
+      <button class="filter" data-filter="java">Java</button>
+      <button class="filter" data-filter="systems">Systems</button>
+    </div>
 
     <div class="grid">
-      <div class="card">
+      <div class="card tilt project" data-tags="c systems">
+        <div class="card-accent"></div>
         <p class="card-tag">C • Multithreading • Systems</p>
         <h3>MiniSpark Framework</h3>
         <p>
@@ -78,77 +149,152 @@
           supporting RDD transformations, thread pools, partition materialization,
           and parallel execution.
         </p>
+        <!-- PLACEHOLDER links -->
+        <!-- <div class="card-links">
+          <a href="#" class="placeholder-link">GitHub →</a>
+          <a href="#" class="placeholder-link">Demo →</a>
+        </div> -->
       </div>
 
-      <div class="card">
+      <div class="card tilt project" data-tags="c systems">
+        <div class="card-accent"></div>
         <p class="card-tag">C • Memory Management</p>
         <h3>Custom Memory Allocator</h3>
         <p>
           Implemented a dynamic memory allocator with splitting, coalescing,
           and best-fit placement strategies to manage heap memory efficiently.
         </p>
+        <!-- <div class="card-links">
+          <a href="#" class="placeholder-link">GitHub →</a>
+          <a href="#" class="placeholder-link">Demo →</a>
+        </div> -->
       </div>
 
-      <div class="card">
+      <div class="card tilt project" data-tags="java">
+        <div class="card-accent"></div>
         <p class="card-tag">Java • Data Structures</p>
         <h3>File System Simulation</h3>
         <p>
           Created a file system simulation with hierarchical folders and files
           using tree structures and hash maps.
         </p>
+        <!-- <div class="card-links">
+          <a href="#" class="placeholder-link">GitHub →</a>
+          <a href="#" class="placeholder-link">Demo →</a>
+        </div> -->
       </div>
     </div>
   </section>
 
   <section id="experience" class="reveal">
-    <h2>Experience</h2>
+    <h2 class="section-title">Experience</h2>
 
-    <div class="card experience-card">
-      <div class="experience-top">
-        <h3>Full-Stack Developer Intern - Spotidol</h3>
-        <span>May 2020 – May 2022</span>
+    <div class="timeline">
+      <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="card experience-card">
+            <div class="experience-top">
+              <h3>Developer Relations Engineer Intern - Snyk</h3>
+              <span class="date-pill">September 2026 – Present</span>
+            </div>
+            <p>
+              Supported developer relations and community engagement in the AI SecEng Community by organizing and hosting tech events across San Francisco, including hackathons, conferences, and developer networking events.
+            </p>
+          </div>
+        </div>
+
+      <div class="timeline-item">
+        <span class="dot"></span>
+        <div class="card experience-card">
+          <div class="experience-top">
+            <h3>Full-Stack Developer Intern - Spotidol</h3>
+            <span class="date-pill">May 2020 – May 2022</span>
+          </div>
+          <p>
+            Built features for mobile and web applications using React Native,
+            Angular, Node.js, MongoDB, and TensorFlow. Collaborated with designers
+            and engineers to improve user experience and supported intern team
+            coordination.
+          </p>
+        </div>
       </div>
 
-      <p>
-        Built features for mobile and web applications using React Native,
-        Angular, Node.js, MongoDB, and TensorFlow. Collaborated with designers
-        and engineers to improve user experience and supported intern team
-        coordination.
-      </p>
-    </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="card experience-card">
+            <div class="experience-top">
+              <h3>Natural Language Processing Intern - Docuvision</h3>
+              <span class="date-pill">June 2019 – August 2019</span>
+            </div>
+            <p>
+              Supported an NLP-based redaction system by preparing, annotating, and
+              validating documents containing personally identifiable information.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
 
-    <div class="card experience-card">
-      <div class="experience-top">
-        <h3>Natural Language Processing Intern - Docuvision</h3>
-        <span>June 2019 – August 2019</span>
+  <section id="education" class="reveal">
+    <h2 class="section-title">Education</h2>
+
+    <div class="grid education-grid">
+      <div class="card">
+        <p class="card-tag">University of Wisconsin–Madison</p>
+        <h3>B.S. Computer Science &amp; Psychology</h3>
+        <p>Graduated May 2026</p>
       </div>
 
-      <p>
-        Supported an NLP-based redaction system by preparing, annotating, and
-        validating documents containing personally identifiable information.
-      </p>
+      <!-- PLACEHOLDER: relevant coursework -->
+      <div class="card">
+        <h3>Relevant Coursework</h3>
+        <div class="chips">
+          <span class="chip">Object-Oriented Programming (CS 300)</span>
+          <span class="chip">Advanced Data Structures (CS 400)</span>
+          <span class="chip">Machine Organization and Programming (CS 354)</span>
+          <span class="chip">Introduction to Algorithms (CS 577)</span>
+          <span class="chip">Introduction to Artificial Intelligence (CS 540)</span>
+          <span class="chip">Introduction to Discrete Mathematics (CS 240)</span>
+          <span class="chip">Elementary Matrix & Linear Algebra (MATH 340)</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="reveal">
-    <h2>Let’s Connect</h2>
+  <!-- PLACEHOLDER SECTION: awards, leadership, certifications -->
+  <section id="highlights" class="reveal">
+    <h2 class="section-title">Leadership &amp; Awards</h2>
 
-    <p>
+    <div class="grid">
+      <div class="card tilt">
+        <div class="card-accent"></div>
+        <p class="card-tag">🌟 Leadership • UW–Madison</p>
+        <h3>Girls Who Code (GWC) - Executive Board Member & President</h3>
+        <p class="card-date">January 2023 – May 2026</p>
+        <p>
+          Organized events to encourage women in technology to engage in
+          collaboration, networking, and community. Led educational sessions on
+          web development, Python, and resume-building for members.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2 class="section-title">Let’s Connect</h2>
+    <p class="footer-text">
       I’m currently open to software engineering, full-stack, systems, mobile,
       and AI-related opportunities.
     </p>
-
-    <div class="contact-links">
-      <a href="mailto:trisharajesh23@gmail.com">Email</a>
-      <a href="https://github.com/trisha-rajesh" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/trisha-rajesh-92a993187/" target="_blank">LinkedIn</a>
-      <a href="TrishaRajesh_Resume_v1.docx.pdf" target="_blank">Resume</a>
+    <div class="footer-icons">
+      <a href="mailto:trisharajesh23@gmail.com" aria-label="Email"><img src="images/email.png" alt="Email" /></a>
+      <a href="https://github.com/trisha-rajesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="images/github.png" alt="GitHub" /></a>
+      <a href="https://www.linkedin.com/in/trisha-rajesh-92a993187/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn" /></a>
     </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Trisha Rajesh</p>
+    <p class="footer-copy">© 2026 Trisha Rajesh · Made with 💜</p>
   </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
